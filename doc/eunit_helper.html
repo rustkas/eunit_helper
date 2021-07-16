@@ -26,8 +26,9 @@
 <div class="spec">
 <p><tt>check_all_by_regex(MP, CharacterList, CheckFirst) -&gt; Result</tt>
 <ul class="definitions"><li><tt>MP = {re_pattern, term(), term(), term(), term()}</tt></li><li><tt>CharacterList = string()</tt></li><li><tt>CheckFirst = boolean()</tt></li><li><tt>Result = boolean()</tt></li></ul></p>
-<p><tt>MP</tt>: input string<br>
+<p><tt>MP</tt>: regular expression<br>
 <tt>CharacterList</tt>: input string<br>
+<tt>CheckFirst</tt>: logic switch. It determines whether the desired solution is a match or a nomatch when the regex is executed.<br>
 </p>
 <p>returns: Returns true if all elements of CharacterList meet the criteria for regular expression and logical switch CheckFirst.</p>
 </div><p>Checks whether string's elements match regular expression.
