@@ -29,7 +29,9 @@ hex.pm Publish project
 -----
 rebar3 hex publish
 
-
 hex.pm Publish documentation
 -----
     $ rebar3 hex docs
+	
+
+

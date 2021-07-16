@@ -12,10 +12,8 @@
 %%
 %% @param MP input string
 %% @param CharacterList input string
-%% @param checkFirst Logic switch. It determines whether
-%% the desired solution is a match or a nomatch when the regex is executed.
-%% @returns Returns true if all elements of CharacterList meet the criteria
-%% for regular expression and logical switch `checkFirst`.
+%% @param checkFirst Logic switch. It determines whether the desired solution is a match or a nomatch when the regex is executed.
+%% @returns Returns true if all elements of CharacterList meet the criteria for regular expression and logical switch CheckFirst.
 -spec check_all_by_regex(MP, CharacterList, CheckFirst) -> Result
     when MP :: {re_pattern, term(), term(), term(), term()},
          CharacterList :: string(),
