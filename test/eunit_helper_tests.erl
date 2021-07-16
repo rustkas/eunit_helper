@@ -6,10 +6,11 @@
 -ifdef(TEST).
 
 -include_lib("eunit/include/eunit.hrl").
+
 -import(eunit_helper, [check_all_by_regex/3]).
 
 get_valid_character_list() ->
-        ValidCharacterList =
+    ValidCharacterList =
         lists:seq(65, 90)
         ++ [97, 122]
         ++ [170, 181, 186]
@@ -23,7 +24,7 @@ check_all_by_regex_01_test() ->
     ValidCharacterList = get_valid_character_list(),
     RegularExpression = "[[:alpha:]]",
     {ok, MP} = re:compile(RegularExpression),
-    Result = check_all_by_regex(MP, ValidCharacterList,true),
+    Result = check_all_by_regex(MP, ValidCharacterList, true),
     ?assertEqual(Expected, Result).
 
 check_all_by_regex_02_test() ->
@@ -31,6 +32,7 @@ check_all_by_regex_02_test() ->
     ValidCharacterList = get_valid_character_list(),
     RegularExpression = "[[:^alpha:]]",
     {ok, MP} = re:compile(RegularExpression),
-    Result = Result = check_all_by_regex(MP, ValidCharacterList,false),
+    Result = Result = check_all_by_regex(MP, ValidCharacterList, false),
     ?assertEqual(Expected, Result).
+
 -endif.
