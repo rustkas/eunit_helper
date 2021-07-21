@@ -1,14 +1,10 @@
-{application, eunit_helper,
- [{description, "A collection of helper functions that can be useful when parsing data from various data types of the Erlang standart library."},
-  {vsn, "0.0.1"},
-  {registered, []},
-  {applications,
-   [kernel,
-    stdlib
-   ]},
-  {env,[]},
-  {modules, []},
-  {licenses, ["Apache 2.0"]},
-  {links,[{"Github","https://github.com/rustkas/eunit_helper"}]},
-  {files,["src","rebar.config","README.md","LICENSE"]}
- ]}.
+{application,eunit_helper,
+             [{description,"A collection of helper functions that can be useful when parsing data from various data types of the Erlang standart library."},
+              {vsn,"0.0.3"},
+              {registered,[]},
+              {applications,[kernel,stdlib]},
+              {env,[]},
+              {modules,[]},
+              {licenses,["Apache 2.0"]},
+              {links,[{"Github","https://github.com/rustkas/eunit_helper"}]},
+              {files,["src","rebar.config","README.md","LICENSE"]}]}.

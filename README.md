@@ -27,11 +27,15 @@ Publishing on hex.pm
 
 hex.pm Publish project
 -----
-rebar3 hex publish
-
+rebar3 hex publish --replace --yes
+rebar3 hex publish --revert
 hex.pm Publish documentation
 -----
     $ rebar3 hex docs
+
+Make several commands one by one
+-----	
+    $ rebar3 do hex cut -i patch, hex publish --yes, hex docs
 	
 
 
