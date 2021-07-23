@@ -18,6 +18,7 @@
 <h2><a name="description">Description</a></h2>Helper functions for eunit testing.
 <h2><a name="index">Function Index</a></h2>
 <table width="100%" border="1" cellspacing="0" cellpadding="2" summary="function index"><tr><td valign="top"><a href="#check_all_by_regex-3">check_all_by_regex/3</a></td><td>Checks whether string's elements match regular expression.</td></tr>
+<tr><td valign="top"><a href="#check_all_by_regex-4">check_all_by_regex/4</a></td><td>Checks whether string's elements match regular expression.</td></tr>
 </table>
 
 <h2><a name="functions">Function Details</a></h2>
@@ -28,7 +29,23 @@
 <ul class="definitions"><li><tt>MP = {re_pattern, term(), term(), term(), term()}</tt></li><li><tt>CharacterList = string()</tt></li><li><tt>CheckFirst = boolean()</tt></li><li><tt>Result = boolean()</tt></li></ul></p>
 <p><tt>MP</tt>: regular expression<br>
 <tt>CharacterList</tt>: input string<br>
-<tt>CheckFirst</tt>: logic switch. It determines whether the desired solution is a match or a nomatch when the regex is executed.<br>
+<tt>CheckFirst</tt>: logic switch. It determines whether the desired solution is a match or a nomatch when the regex is executed<br>
+</p>
+<p>returns: Returns true if all elements of CharacterList meet the criteria for regular expression and logical switch CheckFirst.</p>
+</div><p>Checks whether string's elements match regular expression.
+  <br>
+  <b>See also:</b>
+  <a href="http://erlang.org/doc/man/re.html#run-2" target="_top">re:run/2</a>.
+ </p>
+
+<h3 class="function"><a name="check_all_by_regex-4">check_all_by_regex/4</a></h3>
+<div class="spec">
+<p><tt>check_all_by_regex(MP, CharacterList, CheckFirst, DebugInfo) -&gt; Result</tt>
+<ul class="definitions"><li><tt>MP = {re_pattern, term(), term(), term(), term()}</tt></li><li><tt>CharacterList = string()</tt></li><li><tt>CheckFirst = boolean()</tt></li><li><tt>DebugInfo = nomatch | match</tt></li><li><tt>Result = boolean()</tt></li></ul></p>
+<p><tt>MP</tt>: regular expression<br>
+<tt>CharacterList</tt>: input string<br>
+<tt>CheckFirst</tt>: logic switch. It determines whether the desired solution is a match or a nomatch when the regex is executed<br>
+<tt>DebugInfo</tt>: information for additional logging printing<br>
 </p>
 <p>returns: Returns true if all elements of CharacterList meet the criteria for regular expression and logical switch CheckFirst.</p>
 </div><p>Checks whether string's elements match regular expression.
