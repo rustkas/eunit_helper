@@ -1,6 +1,6 @@
 {application,eunit_helper,
              [{description,"A collection of helper functions that can be useful when parsing data from various data types of the Erlang standart library."},
-              {vsn,"0.0.3"},
+              {vsn,"0.0.4"},
               {registered,[]},
               {applications,[kernel,stdlib]},
               {env,[]},
